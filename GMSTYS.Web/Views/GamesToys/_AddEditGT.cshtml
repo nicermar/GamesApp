@@ -1,0 +1,60 @@
+﻿<div id="AddEditGTModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Game & Toy Info</h4>
+            </div>
+            <div class=" modal-body">
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        Name
+                    </div>
+                    <div class="col-md-5">
+                        <p data-bind="css: { error: Name.hasError }">
+                            <input type="text" class="form-control" data-bind="value:Name, valueUpdate: 'afterkeydown'" maxlength="50" />
+                        </p>
+                            
+                    </div>
+                    <div class="col-md-2">
+                        Price ($)
+                    </div>
+                    <div class="col-md-3">
+                            <input type="text" class="form-control" data-bind="value:Price"   />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        Company
+                    </div>
+                    <div class="col-md-5">
+                     
+                        <p data-bind="css: { error: Company.hasError }">
+
+                            <input type="text" class="form-control" data-bind="value:Company, valueUpdate: 'afterkeydown'" maxlength="50" />
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        Age Restriction
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" data-bind="value:AgeRestriction" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        Description
+                    </div>
+                    <div>
+                        <div class="col-md-10">
+                            <textarea class="form-control" data-bind="value:Description" maxlength="100"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:function() {$root.Save($data)}">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿body {
+}
+  .error {  color: red; }
+  .error input { border: 1px solid red; }
+
+  .alert {
+    top: -10px;
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 99999;
+    display: none;
+}
+  
+.alert {
+    margin-left: auto;
+    top: 0px;
+    left: 35%;
+    width: 450px;
+    text-align: center;
+    font-size: medium;
+    color: black;
+}
+
+.alert-success {
+    background-color: #9FF781;
+}
+
+.alert-warning {
+    background-color: #F4FA58;
+}
+
+.alert-info {
+    background-color: #81DAF5;
+}
+
+.alert-danger {
+    background-color: #FA5858;
+}
